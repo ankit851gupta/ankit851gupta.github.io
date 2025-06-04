@@ -41,17 +41,17 @@
 	 */
 	$.fn.panel = function(userConfig) {
 
-		// No elements?
-			if (this.length == 0)
-				return $this;
+                // No elements?
+                        if (this.length == 0)
+                                return this;
 
 		// Multiple elements?
 			if (this.length > 1) {
 
-				for (var i=0; i < this.length; i++)
-					$(this[i]).panel(userConfig);
+                                for (var i=0; i < this.length; i++)
+                                        $(this[i]).panel(userConfig);
 
-				return $this;
+                                return this;
 
 			}
 
@@ -306,17 +306,17 @@
 			if (typeof (document.createElement('input')).placeholder != 'undefined')
 				return $(this);
 
-		// No elements?
-			if (this.length == 0)
-				return $this;
+                // No elements?
+                        if (this.length == 0)
+                                return this;
 
 		// Multiple elements?
 			if (this.length > 1) {
 
-				for (var i=0; i < this.length; i++)
-					$(this[i]).placeholder();
+                                for (var i=0; i < this.length; i++)
+                                        $(this[i]).placeholder();
 
-				return $this;
+                                return this;
 
 			}
 
